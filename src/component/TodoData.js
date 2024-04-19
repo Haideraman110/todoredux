@@ -3,14 +3,15 @@ import "../style/TodoData.css"
 import { useDispatch, useSelector } from 'react-redux'
 import { deleting } from '../redux/todoslice/todoslice'
 
-const TodoData = () => {
+const TodoData = ({deleterec}) => {
   const [checking,setChecking]=useState([])
   const datas=useSelector(state=>state.todo.tododata)
   // console.log(datas)
   const dispatch=useDispatch()
 
-  const handleDelete=(d)=>{
-    dispatch(deleting(d))
+  const handleDelete=(item)=>{
+    dispatch(deleting(item))
+    deleterec(item)
 
   }
 
@@ -44,8 +45,6 @@ const TodoData = () => {
                 </tbody>
               ))
             }
-
-      
         </table>
 
     </div>
