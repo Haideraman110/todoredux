@@ -1,0 +1,15 @@
+.todoData{
+    width: 50%;
+    margin:10px auto;
+    background-color: rgb(12, 83, 111);
+    padding:10px;
+    box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.5);
+}
+.todoData h5{
+    text-align: center;
+    color: white;
+    padding:10px
+}
+table{
+    box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.5);
+}
